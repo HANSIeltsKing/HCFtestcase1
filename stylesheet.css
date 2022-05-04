@@ -1,0 +1,662 @@
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+	font: 300 14px/1.8 'Raleway', sans-serif;
+	color: #666;
+}
+
+img {
+	height: auto;
+}
+
+a {
+	color: #999;
+}
+
+a:hover {
+	text-decoration: none;
+	color: green;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font: 700 40px/1.2 Raleway, sans-serif;
+	letter-spacing: 5px;
+	color: #222;
+}
+
+h1 {
+	font-size: 40px;
+    font-family: cursive;
+}
+
+h1 span {
+	font-size: 50px;
+    font-family: cursive;
+}
+
+h2 {
+  font-size: 40px;
+  color: green;
+  margin: 0 0 30px;
+  font-family: cursive;
+}
+
+#home {
+	background: url("https://hansieltsking.github.io/hansCharmingFoam/background.jpg");
+  display: block;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+  	padding: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  opacity: 0.7;
+  margin-bottom: 230px;
+}
+
+.intro {
+	width: 100%;
+	top: 50%;
+  position: absolute;
+	left: 0;
+	text-align: center;
+	-webkit-transform: translate(0%, -50%);
+	   -moz-transform: translate(0%, -50%);
+		-ms-transform: translate(0%, -50%);
+		 -o-transform: translate(0%, -50%);
+			transform: translate(0%, -50%);
+	padding: 0 15px;
+}
+
+.scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin-left: -15px;
+	display: block;
+	z-index: 10;
+    text-align: center;
+}
+
+.scroll-down span{
+    position: relative;
+    color: #fff;
+    -webkit-animation-name: drop;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;
+	animation-name: drop;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+}
+
+@-webkit-keyframes drop	{
+	0%   { top:0px;  opacity: 0;}
+	30%  { top:10px; opacity: 1;}
+	100% { top:25px; opacity: 0;}
+}
+
+@keyframes drop	{
+	0%   { top:0px;  opacity: 0;}
+	30%  { top:10px; opacity: 1;}
+	100% { top:25px; opacity: 0;}
+}
+
+.pfblock {
+  padding: 120px 0 100px;
+  background: #f5f5f5;
+}
+
+.gray {
+	padding: 750px 0 0;
+    background: #f5f5f5;
+}
+
+.pfblock-image {
+	padding: 0;
+}
+
+.calltoaction h1,
+.calltoaction h2,
+.calltoaction h3,
+.calltoaction h4,
+.calltoaction h5,
+.calltoaction h6,
+.pfblock-image,
+.pfblock-image h1,
+.pfblock-image h2,
+.pfblock-image h3,
+.pfblock-image h4,
+.pfblock-image h5,
+.pfblock-image h6 {
+	color: gray;
+}
+
+.pfblock-header {
+	text-align: center;
+}
+
+.pfblock-header-left {
+	text-align: left;
+}
+
+.pfblock-header-left .pfblock-line {
+	width: inherit;
+}
+
+.pfblock-title{
+	text-align: center;
+    font-weight: 800;
+}
+
+.pfblock-subtitle {
+	text-align: left;
+	font-style: normal;
+	font-size: 18px;
+}
+
+.pfblock-line {
+	background: rgba(135, 135, 135, 0.5);
+	width: 100px;
+	height: 1px;
+	margin: 30px auto;
+}
+
+#footer {
+	background: darkOliveGreen;
+	text-align: center;
+	padding: 40px 0;
+	color: #FFF;
+}
+
+.social-links {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 20px;
+}
+
+.social-links li {
+	display: inline-block;
+    margin: 5px;
+}
+
+.social-links a {
+	width: 36px;
+	height: 36px;
+	display: block;
+	line-height: 35px;
+	text-align: center;
+	border: 1px solid rgba(255, 255, 255, .1);
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+	font-size: 14px;
+	color: rgba(255, 255, 255, .2);
+}
+
+.social-links a:hover {
+	border: 1px solid rgba(255, 255, 255, .5);
+	color: rgba(255, 255, 255, .8);
+}
+
+/* ---------------------------------------------- /*
+ * Navigation
+/* ---------------------------------------------- */
+.navbar-collapse{
+  padding: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-collapse a {
+  padding: 0px 0px 0px 50px;
+  text-decoration: none;
+  font-size: 1.8vw;
+}
+
+.HCFNottingham{
+  position: relative;
+  width: 500px;
+  left: -20%;
+  margin-top: 50px;
+}
+
+.HCFBrand{
+  position: relative;
+  width: 500px;
+  left: -20%;
+  margin-top: -50px;
+}
+
+.pfblock-sub{
+  text-align: left;
+  font-size: 1.5vw;
+  width: 42%;
+  margin-left: 700px;
+  margin-top: -470px
+}
+
+.row-graph img{
+  max-width: 50%;
+}
+
+.row-graph{
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 400px;
+}
+
+.caption{
+  display: block;
+  font-size: 1.6vw;
+}
+
+.b1{
+  position: relative;
+  left: 115%;
+  margin-top: -245px;
+}
+
+.b3{
+  position: relative;
+  left: 230%;
+  margin-top: -245px;
+}
+
+.b5{
+  position: relative;
+  left: 0%;
+  margin-top: 50px;
+}
+
+.b6{
+  position: relative;
+  left: 115%;
+  margin-top: -220px;
+}
+
+.b2{
+  position: relative;
+  left: 230%;
+  margin-top: -215px;
+}
+
+.resume{
+  position: relative;
+  display: block;
+  left: 115%;
+  top: 100px;
+}
+
+.container .pfblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 0 70px 0;
+}
+
+.pfblock .project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.blank2{
+  margin: 0 0 0 0;
+}
+
+.proj-contain{
+  display: none;
+  margin: 0px 0 70px 0;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-width: thin;
+  width: 450px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5,
+.project-6{
+  display: block;
+}
+
+.proj-screenshot {
+  width: 100%;
+}
+
+.project-title {
+  background-color: #273344;
+  z-index: 3;
+  opacity: .7;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 0 0 30px;
+  width: 100%;
+  height: 40%;
+}
+
+.project-title h6 {
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Gugi", cursive;
+}
+
+.project-title .links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-title .website-link {
+  position: relative;
+  top: 15px;
+  right: -180px;
+  font-size: 24px;
+  float: right;
+  color: green;
+  font-family: "Gugi", cursive;
+  font-weight: 600;
+}
+
+.project-1{
+  position: relative;
+  left: 650px;
+  top: 0px;
+}
+
+.text_project1{
+  position: relative;
+  font-size: 1.6vw;
+  width: 40%;
+  left: -650px;
+  top: 0px;
+}
+
+.project-2{
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.text_project2{
+  position: relative;
+  font-size: 1.6vw;
+  width: 40%;
+  left: 0px;
+  top: 0px;
+}
+
+.project-3{
+  position: relative;
+  left: 650px;
+  top: 0px;
+}
+
+.text_project3{
+  position: relative;
+  font-size: 1.6vw;
+  width: 40%;
+  left: -650px;
+  top: 0px;
+}
+
+.project-4{
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.text_project4{
+  position: relative;
+  font-size: 1.6vw;
+  width: 40%;
+  left: 0px;
+  top: 0px;
+}
+
+.project-5{
+  position: relative;
+  left: 650px;
+  top: 0px;
+}
+
+.text_project5{
+  position: relative;
+  font-size: 1.6vw;
+  width: 40%;
+  left: -650px;
+  top: 0px;
+}
+
+.project-6{
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.text_project6{
+  position: relative;
+  font-size: 1.6vw;
+  width: 40%;
+  left: 0px;
+  top: 0px;
+}
+
+.pfcontact{
+	font-size: 1.6vw;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    overflow-x: hidden;
+  }
+  html{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  h1{
+    font-size: 25px;
+    font-family: cursive;
+  }
+  h1 span{
+	font-size: 30px;
+    font-family: cursive;
+  }
+  .HCFNottingham{
+    width: 80%;
+    margin: auto;
+    display: block;
+    vertical-align: center;
+    left: 0%;
+  }
+  .HCFBrand{
+    width: 80%;
+    margin: auto;
+    display: block;
+    vertical-align: center;
+    left: 0%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .pfblock-sub{
+    text-align: left;
+    font-size: 1.8vw;
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+  .row-graph{
+    vertical-align: center;
+    display: block;
+    text-align: center;
+    width: 400px;
+    height: 1500px;
+  }
+  .b1{
+    width: 250px;
+    margin: auto;
+    display: block;
+    vertical-align: center;
+    bottom: -50px;
+    left: -7%;
+  }
+  .b4{
+    position: relative;
+    width: 250px;
+    margin: auto;
+    display: block;
+    vertical-align: center;
+    bottom: 0px;
+    left: -7%;
+  }
+  .b3{
+    width: 250px;
+    margin: auto;
+    display: block;
+    vertical-align: center;
+    bottom: -100px;
+    left: -7%;
+  }
+  .b5{
+    width: 250px;
+    margin: auto;
+    display: block;
+    vertical-align: center;
+    bottom: -150px;
+    left: -7%;
+  }
+  .b6{
+    width: 250px;
+    margin: auto;
+    display: block;
+    vertical-align: center;
+    bottom: -200px;
+    left: -7%;
+  }
+  .b2{
+    width: 250px;
+    margin: auto;
+    display: block;
+    vertical-align: center;
+    bottom: -250px;
+    left: -7%;
+  }
+  .caption{
+    display: block;
+    font-size: 3vw;
+  }
+  .resume{
+    position: relative;
+    display: block;
+    padding-top: 200px;
+    vertical-align: center;
+    font-size: 3vw;
+    left: -7%;
+  }
+  .proj-contain{
+    display: block;
+    margin: 0px 0px 70px 0px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: thin;
+    width: 80%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+  }
+  .project-title h6 {
+    font-size: 18px;
+    color: #FFFFFF;
+    padding-bottom: 25px;
+  }
+  .project-title .website-link {
+    position: relative;
+    top: 0px;
+    right: -100px;
+    font-size: 18px;
+  }
+  .project-1{
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+  .text_project1{
+    position: relative;
+    font-size: 1.6vw;
+    width: 40%;
+    left: 0px;
+    top: -50px;
+  }
+  .text_project2{
+    top: -50px;
+  }
+  .project-3{
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+  .text_project3{
+    position: relative;
+    font-size: 1.6vw;
+    width: 40%;
+    left: 0px;
+    top: -50px;
+  }
+  .text_project4{
+    top: -50px;
+  }
+  .project-5{
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+  .text_project5{
+    position: relative;
+    font-size: 1.6vw;
+    width: 40%;
+    left: 0px;
+    top: -50px;
+  }
+  .text_project6{
+    top: -50px;
+  }
+}
